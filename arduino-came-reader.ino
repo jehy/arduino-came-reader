@@ -1,5 +1,7 @@
 #define RX 2
 #define TIMER_DIV
+//void ICACHE_RAM_ATTR rx_int(); // uncomment if launching code causes boot loop
+
 
 volatile byte level = 255;
 volatile unsigned long last, len;
@@ -106,7 +108,7 @@ void setup()
 {
   Serial.begin(115200);
   attachInterrupt(0, rx_int, CHANGE);
-  //while (!Serial);
+ while (!Serial);
 
   Serial.println("MEGA ARDUINO LOGGER");
   Serial.println("");

@@ -10,3 +10,5 @@ It can read both 10 and 20 bit keys.
 Just connect any 433Mhz receiver, specify port, launch sketch, push button on your remote and get your key in hex.
 
 If you wanna open gates using received code, use [this sketch](https://github.com/jehy/arduino-came-gates-mqtt).
+
+Please note that this surely works on Arduino UNO, somehoe does not work on Wemos D1 R1 and not sure of works on other controllers.
